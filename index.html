@@ -153,25 +153,16 @@
       </td>
     </tr>
 
-    <tr onmouseout="NOIR_stop()" onmouseover="NOIR_start()">
+    <tr>
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
-          <div class="two" id='NOIR_image'><video  width=100% muted autoplay loop>
-          <source src="images/NOIR.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div>
-          <img src='images/NOIR.png' width=100%>
+          <div class="two" id='NOIR_video'>
+            <video width="100%" muted autoplay loop>
+              <source src="images/NOIR.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
         </div>
-        <script type="text/javascript">
-          function NOIR_start() {
-            document.getElementById('concepts_image').style.opacity = "1";
-          }
-
-          function NOIR_stop() {
-            document.getElementById('concepts_image').style.opacity = "0";
-          }
-          NOIR_stop()
-        </script>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
         <a href="https://noir-corl.github.io/">
@@ -179,13 +170,12 @@
         </a>
         <br>
         Ruohan Zhang*, 
-				<strong>Sharon Lee*</strong>,
+        <strong>Sharon Lee*</strong>,
         Minjune Hwang*, Ayano Hiranaka*, Chen Wang, Wensi Ai, Jin Jie Ryan Tan, Shreya Gupta, Yilun Hao, Gabrael Levine, Ruohan Gao, Anthony Norcia, Li Fei-Fei, Jiajun Wu
-	
         <br>
         <em>Conference on Robot Learning (CoRL) </em>, 2023
         <br>
-        <strong style="color: #9f2626;">Oral  Presentation</strong> at Bridging the Gap between Cognitive Science and Robot Learning Workshop at CoRL 2023
+        <strong style="color: #9f2626;">Oral Presentation</strong> at Bridging the Gap between Cognitive Science and Robot Learning Workshop at CoRL 2023
         <br>
         <a href="https://noir-corl.github.io/">project page</a>
         /
@@ -193,6 +183,7 @@
         <p></p>
       </td>
     </tr>
+    
 
     <tr>
       <td style="padding:20px;width:25%;vertical-align:middle">
