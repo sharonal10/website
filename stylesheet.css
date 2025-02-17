@@ -64,14 +64,14 @@
 }
 
 a {
-  color: #1772d0;
+  color: #539eb7;
   text-decoration: none;
 }
 
 a:focus,
 a:hover {
-  color: #f09228;
-  text-decoration: none;
+  color: #539eb7;
+  text-decoration: underline;
 }
 
 body,
@@ -80,33 +80,33 @@ th,
 tr,
 p,
 a {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+  font-family: Palatino;
+  font-size: 16.94px;
 }
 
 strong {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+  font-family: Palatino;
+  font-size: 16.94px;
 }
 
 h2 {
   margin: 0;
   font-weight: normal;
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 22px;
+  font-family: Palatino;
+  font-size: 26.62px;
 }
 
 .papertitle {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+  font-family: Palatino;
+  font-size: 16.94px;
   font-weight: 700;
 }
 
 .name {
   padding-top: 20px;
   margin: 0;
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 32px;
+  font-family: Palatino;
+  font-size: 38.72px;
 }
 
 .one {
@@ -131,5 +131,25 @@ h2 {
 }
 
 span.highlight {
-  background-color: #ffffd0;
+  background-color: #d4aeba;
+}
+
+.one a {
+  color: #539eb7;
+}
+
+.one a:hover {
+  color: #539eb7;
+}
+
+.highlight {
+  color: #c92055;
+}
+
+.highlight a {
+  color: #c92055;
+}
+
+.highlight a:hover {
+  color: #c92055;
 }
