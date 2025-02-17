@@ -24,9 +24,10 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr style="padding:0px">
               <td style="padding:2.5%;width:63%;vertical-align:middle">
-                <p class="name" style="text-align: center; font-family: 'Times New Roman'; font-size: 250%; background-color: rgb(240, 235, 237); padding: 8px; margin: 0; width: 100%; display: block;">
+                <p class="name" style="text-align: center; font-family: 'Times New Roman'; font-size: 250%; background-color: rgb(240, 235, 237); padding: 8px; margin: 0; width: 100%; display: block; border-radius: 15px;">
                   Sharon Lee
                 </p>
+                
                   <p><p>
                      I am Sharon, a PhD student and <a href="https://knight-hennessy.stanford.edu/">Knight-Hennessy scholar</a> at Stanford University. I earned my Master’s from Stanford, where I worked with Jiajun Wu and Fei-Fei Li at the <a href="https://svl.stanford.edu/">Stanford Vision and Learning Lab</a>, and my Bachelor’s in <a href="https://eecs.berkeley.edu/resources/undergrads/honors/EECS">EECS with Honors</a> from UC Berkeley. 
                 </p>
@@ -46,7 +47,7 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
               <tr>
               <td style="padding:20px;width:100%;vertical-align:middle">
-                <h2 style="color: #8a4e4d;">News and Services</h2>
+                <h2 style="color: #8a4e4d;">News</h2>
                 <p>
                   🔊 Nov 2024: Featured in <a href="https://www.thestar.com.my/news/education/2024/11/10/sharon-lee-ding-change-at-stanford">TheStar</a> newspaper
                   <br>
@@ -71,143 +72,215 @@
             </tr>
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-
-    <tr onmouseout="nerfcasting_stop()" onmouseover="nerfcasting_start()">
+            <tr onmouseout="behavior_stop()" onmouseover="behavior_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='behaviors_image'><video  width=100% muted autoplay loop>
+                  <source src="images/behavior.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video></div>
+                  <img src='images/behavior.png' width=100%>
+                </div>
+                <script type="text/javascript">
+                  function behavior_start() {
+                    document.getElementById('concepts_image').style.opacity = "1";
+                  }
+        
+                  function behavior_stop() {
+                    document.getElementById('concepts_image').style.opacity = "0";
+                  }
+                  behavior_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://behavior-vision-suite.github.io/">
+                  <span class="papertitle">BEHAVIOR Vision Suite: Customizable Dataset Generation via Simulation</span>
+                </a>
+                <br>
+                Yunhao Ge*, Yihe Tang*, Jiashu Xu*, Cem Gokmen*, Chengshu Li, Wensi Ai, Benjamin Jose Martinez, Arman Aydin, Mona Anvari, Ayush K Chakravarthy, Hong-Xing Yu, Josiah Wong, Sanjana Srivastava, 
+                <br>
+                <strong>Sharon Lee</strong>,
+                Shengxin Zha, Laurent Itti, Yunzhu Li, Roberto Martín-Martín, Miao Liu, Pengchuan Zhang, Ruohan Zhang, Li Fei-Fei, Jiajun Wu
+          
+                <br>
+                <em>Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2024
+                <br>
+                <strong style="color: #9f2626;">Highlight</strong>
+                <br>
+                <a href="https://behavior-vision-suite.github.io/">project page</a>
+                /
+                <a href="https://arxiv.org/abs/2405.09546">arXiv</a>
+                <p></p>
+              </td>
+            </tr>
+    <tr onmouseout="concepts_stop()" onmouseover="concepts_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
-          <div class="two" id='nerfcasting_image'><video  width=100% muted autoplay loop>
-          <source src="images/nerfcasting.mp4" type="video/mp4">
+          <div class="two" id='concepts_image'><video  width=100% muted autoplay loop>
+          <source src="images/concepts.mp4" type="video/mp4">
           Your browser does not support the video tag.
           </video></div>
-          <img src='images/nerfcasting.jpg' width=100%>
+          <img src='images/concepts.png' width=100%>
         </div>
         <script type="text/javascript">
-          function nerfcasting_start() {
-            document.getElementById('nerfcasting_image').style.opacity = "1";
+          function concepts_start() {
+            document.getElementById('concepts_image').style.opacity = "1";
           }
 
-          function nerfcasting_stop() {
-            document.getElementById('nerfcasting_image').style.opacity = "0";
+          function concepts_stop() {
+            document.getElementById('concepts_image').style.opacity = "0";
           }
-          nerfcasting_stop()
+          concepts_stop()
         </script>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://nerf-casting.github.io/">
-          <span class="papertitle">NeRF-Casting: Improved View-Dependent Appearance with Consistent Reflections</span>
+        <a href="https://ai.stanford.edu/~yzzhang/projects/concept-axes/">
+          <span class="papertitle">Language-Informed Visual Concept Learning</span>
         </a>
         <br>
-				
-        <a href="https://dorverbin.github.io/">Dor Verbin</a>,
-        <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
-				<a href="https://phogzone.com/">Peter Hedman</a>,
-				<a href="https://benattal.github.io/">Benjamin Attal</a>, <br>
-				<a href="https://bmild.github.io/">Ben Mildenhall</a>,
-				<a href="https://szeliski.org/RichardSzeliski.htm">Richard Szeliski</a>,
-				<strong>Jonathan T. Barron</strong>
+				<strong>Sharon Lee*</strong>,
+        Yunzhi Zhang*,
+        Shangzhe Wu,
+        Jiajun Wu 
+	
         <br>
-        <em>SIGGRAPH Asia</em>, 2024
+        <em>International Conference on Learning Representations (ICLR)</em>, 2024
         <br>
-        <a href="https://nerf-casting.github.io/">project page</a>
+        <a href="https://ai.stanford.edu/~yzzhang/projects/concept-axes/">project page</a>
         /
-        <a href="https://arxiv.org/abs/2405.14871">arXiv</a>
+        <a href="https://arxiv.org/abs/2312.03587">arXiv</a>
         <p></p>
-        <p>
-        Carefully casting reflection rays lets us synthesize photorealistic specularities in real-world scenes.
-        </p>
       </td>
     </tr>
-      
-      <tr onmouseout="db3d_stop()" onmouseover="db3d_start()">
-        <td style="padding:20px;width:25%;vertical-align:middle">
-          <div class="one">
-            <div class="two" id='db3d_image'><video  width=100% height=100% muted autoplay loop>
-            <source src="images/owl.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-            </video></div>
-            <img src='images/owl.png' width="160">
-          </div>
-          <script type="text/javascript">
-            function db3d_start() {
-              document.getElementById('db3d_image').style.opacity = "1";
-            }
 
-            function db3d_stop() {
-              document.getElementById('db3d_image').style.opacity = "0";
-            }
-            db3d_stop()
-          </script>
-        </td>
-        <td style="padding:20px;width:75%;vertical-align:middle">
-          <a href="https://dreambooth3d.github.io/">
-            <span class="papertitle">DreamBooth3D: Subject-Driven Text-to-3D Generation</span>
-          </a>
-          <br>
-          
-  <a href="https://amitraj93.github.io/">Amit Raj</a>, <a href="https://www.linkedin.com/in/srinivas-kaza-64223b74">Srinivas Kaza</a>, <a href="https://poolio.github.io/">Ben Poole</a>, <a href="https://m-niemeyer.github.io/">Michael Niemeyer</a>, <a href="https://natanielruiz.github.io/">Nataniel Ruiz</a>, 
-  <a href="https://bmild.github.io/">Ben Mildenhall</a>, <a href="https://scholar.google.com/citations?user=I2qheksAAAAJ">Shiran Zada</a>, <a href="https://kfiraberman.github.io/">Kfir Aberman</a>, <a href="http://people.csail.mit.edu/mrub/">Michael Rubinstein</a>, 
-          <strong>Jonathan T. Barron</strong>, <a href="http://people.csail.mit.edu/yzli/">Yuanzhen Li</a>, <a href="https://varunjampani.github.io/">Varun Jampani</a>
-          <br>
-          <em>ICCV</em>, 2023
-          <br>
-          <a href="https://dreambooth3d.github.io/">project page</a> / 
-          <a href="https://arxiv.org/abs/2303.13508">arXiv</a>
-          <p></p>
-          <p>Combining DreamBooth (personalized text-to-image) and DreamFusion (text-to-3D) yields high-quality, subject-specific 3D assets with text-driven modifications</p>
-        </td>
-      </tr>
+    <tr onmouseout="NOIR_stop()" onmouseover="NOIR_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='NOIR_image'><video  width=100% muted autoplay loop>
+          <source src="images/NOIR.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/NOIR.png' width=100%>
+        </div>
+        <script type="text/javascript">
+          function NOIR_start() {
+            document.getElementById('concepts_image').style.opacity = "1";
+          }
+
+          function NOIR_stop() {
+            document.getElementById('concepts_image').style.opacity = "0";
+          }
+          NOIR_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://noir-corl.github.io/">
+          <span class="papertitle">NOIR: Neural Signal Operated Intelligent Robots for Everyday Activities</span>
+        </a>
+        <br>
+        Ruohan Zhang*, 
+				<strong>Sharon Lee*</strong>,
+        Minjune Hwang*, Ayano Hiranaka*, Chen Wang, Wensi Ai, Jin Jie Ryan Tan, Shreya Gupta, Yilun Hao, Gabrael Levine, Ruohan Gao, Anthony Norcia, Li Fei-Fei, Jiajun Wu
+	
+        <br>
+        <em>Conference on Robot Learning (CoRL) </em>, 2023
+        <br>
+        <strong style="color: #9f2626;">Oral  Presentation</strong> at Bridging the Gap between Cognitive Science and Robot Learning Workshop at CoRL 2023
+        <br>
+        <a href="https://noir-corl.github.io/">project page</a>
+        /
+        <a href="https://arxiv.org/abs/2311.01454">arXiv</a>
+        <p></p>
+      </td>
+    </tr>
+
+    <tr>
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id="seed_image">
+            <video width="100%" muted autoplay loop>
+              <source src="images/seed.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <img src="images/seed.mp4" width="100%">
+        </div>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://seediros23.github.io/">
+          <span class="papertitle">Primitive Skill-based Robot Learning from Human Evaluative Feedback</span>
+        </a>
+        <br>
+        Ayano Hiranaka*, Minjune Hwang*,
+        <strong>Sharon Lee</strong>,
+        Chen Wang, Li Fei-Fei, Jiajun Wu, Ruohan Zhang
+        <br>
+        <em>International Conference on Intelligent Robots and Systems (IROS) </em>, 2023
+        <br>
+        <a href="https://seediros23.github.io/">project page</a>
+        /
+        <a href="https://arxiv.org/abs/2307.15801">arXiv</a>
+        <p></p>
+      </td>
+    </tr>
+    
+
+    <tr onmouseout="vivr_stop()" onmouseover="vivr_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='seed_image'><video  width=100% muted autoplay loop>
+          <source src="images/vivr.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/vivr.png' width=100%>
+        </div>
+        <script type="text/javascript">
+          function vivr_start() {
+            document.getElementById('vivr_image').style.opacity = "1";
+          }
+
+          function vivr_stop() {
+            document.getElementById('vivr_image').style.opacity = "0";
+          }
+          vivr_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://seediros23.github.io/">
+          <span class="papertitle">Quantifying the Effect of Visual Impairments on Daily Activities in Virtual, Interactive Environments</span>
+        </a>
+        <br>
+        Wensi Ai,
+				<strong>Sharon Lee</strong>,
+        Li Fei-Fei, Jiajun Wu, Ruohan Zhang
+        <br>
+        <em>Proceedings of the Annual Meeting of the Cognitive Science Society (CogSci) </em>, 2023
+        <br>
+        <a href="https://sites.google.com/view/vi-vr/?authuser=1">project page</a>
+        /
+        <a href="https://escholarship.org/content/qt2sj3r0n2/qt2sj3r0n2.pdf1">arXiv</a>
+        <p></p>
+      </td>
+    </tr>
       
           <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
             <tr>
               <td>
-                <h2>Miscellanea</h2>
+                <h2>Services</h2>
               </td>
             </tr>
           </tbody></table>
           <table width="100%" align="center" border="0" cellpadding="20"><tbody>
             
             <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle"><img src="images/cvf.jpg"></td>
               <td width="75%" valign="center">
-                <a href="https://cvpr.thecvf.com/Conferences/2024">Area Chair, CVPR 2024</a>
+                <em>Reviewer for ICLR  and ICML.</em>
                 <br>
-                <a href="https://cvpr2023.thecvf.com/Conferences/2023">Demo Chair, CVPR 2023</a>
+                Student instructor for <a href="https://cs186berkeley.net/">CS186, Fall 2021</a>
                 <br>
-                <a href="https://cvpr2022.thecvf.com/area-chairs">Area Chair, CVPR 2022</a>
+                Student instructor for <a href="https://cs170.org/">CS170, Spring 2022</a>
                 <br>
-                <a href="http://cvpr2021.thecvf.com/area-chairs">Area Chair & Award Committee Member, CVPR 2021</a>
-                <br>
-                <a href="http://cvpr2019.thecvf.com/area_chairs">Area Chair, CVPR 2019</a>
-                <br>
-                <a href="http://cvpr2018.thecvf.com/organizers/area_chairs">Area Chair, CVPR 2018</a>
-              </td>
-            </tr>
-            <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <img src="images/cs188.jpg" alt="cs188">
-              </td>
-              <td width="75%" valign="center">
-                <a href="http://inst.eecs.berkeley.edu/~cs188/sp11/announcements.html">Graduate Student Instructor, CS188 Spring 2011</a>
-                <br>
-                <a href="http://inst.eecs.berkeley.edu/~cs188/fa10/announcements.html">Graduate Student Instructor, CS188 Fall 2010</a>
-                <br>
-                <a href="http://aima.cs.berkeley.edu/">Figures, "Artificial Intelligence: A Modern Approach", 3rd Edition</a>
-              </td>
-            </tr>
-            
-
-            <tr>
-              <td align="center" style="padding:20px;width:25%;vertical-align:middle">
-                <h2>Basically <br> Blog Posts</h2>
-              </td>
-              <td width="75%" valign="middle">
-                <a href="https://arxiv.org/abs/2112.11687">Squareplus: A Softplus-Like Algebraic Rectifier</a>
-                <br>
-                <a href="https://arxiv.org/abs/2010.09714">A Convenient Generalization of Schlick's Bias and Gain Functions</a>
-                <br>
-                <a href="https://arxiv.org/abs/1704.07483">Continuously Differentiable Exponential Linear Units</a>
-                <br>
-                <a href="https://jonbarron.info/data/cvpr2023_llm_workshop_annotated.pdf">Scholars & Big Models: How Can Academics Adapt?</a>
+                Course assistnat for  <a href="https://shivag.github.io/cs145-stanford-fa23/">CS145, Autumn 2022</a>
               </td>
             </tr>
             
